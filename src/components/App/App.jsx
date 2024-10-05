@@ -5,10 +5,10 @@ import SearchBox from '../SearchBox/SearchBox';
 import ContactList from '../ContactList/ContactList';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchContacts } from '../../redux/operations';
 import Loader from '../Loader/Loader';
 import { selectError, selectLoading } from '../../redux/contactsSlice';
 import Error from '../Error/Error';
+import { fetchContacts } from '../../redux/contactsOps';
 
 export default function App() {
   const dispatch = useDispatch();

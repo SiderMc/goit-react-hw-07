@@ -4,7 +4,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import PersonIcon from '@mui/icons-material/Person';
 import PhoneIcon from '@mui/icons-material/Phone';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/operations';
+import { deleteContact } from '../../redux/contactsOps';
+
 
 export default function Contact({ data: { name, number, id } }) {
   const dispatch = useDispatch();

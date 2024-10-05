@@ -8,7 +8,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useId } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { openModal, selectModal } from '../../redux/contactsSlice';
-import { addContact } from '../../redux/operations';
+import { addContact } from '../../redux/contactsOps';
+
 
 export default function ContactForm() {
   const isOpen = useSelector(selectModal);
